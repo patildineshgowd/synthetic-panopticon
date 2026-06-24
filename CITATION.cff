@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Recommended paper citation: Dinesh Gowd Patil (2026). The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense. Version 1.0, June 2026. Recommended dataset citation: Dinesh Gowd Patil (2026). SP-SEC-50 Evidence Corpus v1.0: Structured Evidence on AI-Enabled Identity Fraud and PII Degradation. Version 1.0, June 2026."
+title: "The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense"
+version: "1.0"
+date-released: "2026-06-06"
+authors:
+  - family-names: "Patil"
+    given-names: "Dinesh Gowd"
+type: report
+abstract: "A systematic evidence review and structured quantitative synthesis of AI-enabled identity fraud, PII degradation, synthetic identity risk, and layered identity assurance."
+keywords:
+  - synthetic identity fraud
+  - PII degradation
+  - generative AI
+  - deepfakes
+  - identity proofing
+  - passkeys
+  - credit bureaus
+  - fraud telemetry
+  - SP-SEC-50
+  - identity assurance
+preferred-citation:
+  type: report
+  title: "The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense"
+  authors:
+    - family-names: "Patil"
+      given-names: "Dinesh Gowd"
+  year: 2026
+  version: "1.0"

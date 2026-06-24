@@ -1,0 +1,25 @@
+field_name,definition,allowed_values,example
+record_id,Unique stable row identifier for the SP-SEC-50 corpus.,string,SPSEC50-001
+ref_ids,Numeric reference IDs used in the whitepaper.,semicolon-separated integers,1;3
+source_key,BibTeX-style stable key for the source.,string,FTC2025Fraud
+source_title,Title of the source from which the metric was extracted.,string,2024 Internet Crime Report
+source_type,Source category.,government|standards|vendor telemetry|academic|methodology,government
+evidence_basket,Evidence basket used for synthesis.,government|standards|vendor|academic|regulatory,government
+domain,Risk or control domain.,string,synthetic identity fraud
+attack_vector,"Attack mechanism or fraud vector, where relevant.",string,face swap/deepfake
+control_or_topic,"Defensive control, topic, or reporting lens.",string,remote identity verification
+geography,Geographic scope represented by the source.,string,US
+time_period,Period represented by the metric.,string,2024
+study_type,Evidence method or reporting type.,string,administrative reporting
+metric_name,Normalized metric label.,string,reported consumer fraud losses
+metric_value,Numeric metric value where extractable.,number or blank,12.5
+metric_unit,Metric unit.,string,USD billions
+denominator,"Population, denominator, or scope for the metric.",string,Consumer Sentinel voluntary reports
+extracted_result,Plain-English extracted result.,string,FTC reported more than $12.5B...
+limitations,Known limitation for interpretation.,string,Voluntary reporting; not a population census.
+comparable_group,Metric family for conservative grouped synthesis.,string,ai_attack_growth_rates
+include_in_grouped_synthesis,Whether row is included in grouped summary calculations.,TRUE/FALSE,TRUE
+evidence_confidence_1_to_5,Reviewer confidence in extraction and source quality.,1-5,5
+primary_url,Canonical URL for the source.,URL,https://...
+human_review_status,Manual-review status.,reviewed|needs_review,reviewed
+comparable_group_label,"Human-readable display label for comparable_group, used in publication tables.",Title-case text,AI Attack Growth Rates
