@@ -1,39 +1,49 @@
-# The Synthetic Panopticon - Version 1.0 Release Package
+# The Synthetic Panopticon
 
-Author: Dinesh Gowd Patil  
-Release date: June 2026  
-Evidence snapshot: June 6, 2026
-
-[![Report DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20835606.svg)](https://doi.org/10.5281/zenodo.20835606)
+[![Report DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20835606.svg)](https://doi.org/10.5281/zenodo.20835606)  
 [![Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20838054.svg)](https://doi.org/10.5281/zenodo.20838054)
 
-This package contains the proofread Version 1.0 release of **The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense** and the accompanying **SP-SEC-50 Evidence Corpus v1.0**.
+**The Synthetic Panopticon** is a Version v1 technical report and reproducibility package on AI-enabled identity fraud, PII degradation, synthetic identity risk, and multi-layered identity assurance.
 
-## Release status
+## Canonical research outputs
 
-Version 1.0 is the canonical public release for citation. Earlier working drafts are superseded. Minor corrections should be tracked through `ERRATA.md`; substantive updates should be issued as separately versioned releases.
+| Artifact | DOI | Link |
+|---|---|---|
+| Report | `10.5281/zenodo.20835606` | https://doi.org/10.5281/zenodo.20835606 |
+| Dataset | `10.5281/zenodo.20838054` | https://doi.org/10.5281/zenodo.20838054 |
 
 ## How to cite
 
-For the report:
+### Report
 
-Dinesh Gowd Patil (2026). *The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense*. Version 1.0, June 2026. DOI: [10.5281/zenodo.20835606](https://doi.org/10.5281/zenodo.20835606).
+```text
+Dinesh Gowd Patil. (2026). The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense (Version v1) [Report]. Zenodo. https://doi.org/10.5281/zenodo.20835606
+```
 
-For the dataset:
+### Dataset
 
-Dinesh Gowd Patil (2026). *SP-SEC-50 Evidence Corpus v1.0: Structured Evidence on AI-Enabled Identity Fraud and PII Degradation*. Version 1.0, June 2026. DOI: [10.5281/zenodo.20838054](https://doi.org/10.5281/zenodo.20838054).
+```text
+Dinesh Gowd Patil. (2026). SP-SEC-50 Evidence Corpus: Structured Evidence on AI-Enabled Identity Fraud and PII Degradation (Version v1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20838054
+```
 
-## Proofing changes in this build
+## Repository contents
 
-- Normalized visible recommended citations to the full author name `Dinesh Gowd Patil`; removed abbreviated citation strings.
-- Corrected reference [21] from a malformed author abbreviation to `Rodney Kinney et al.`
-- Standardized FTC category spelling to `imposter scams`, matching the FTC source text.
-- Replaced raw `snake_case` schema names in the body synthesis table with formal publication labels.
-- Reworked the synthesis table to avoid fractured cells and orphaned line fragments across page breaks.
-- Corrected ordered-list numbering bleed in Section 5 and Section 10.
-- Added citation-marker spacing in the abstract and a lead-in sentence before the recursive identity architecture figure.
-- Preserved raw schema keys in the CSV for reproducibility.
+| Folder | Contents |
+|---|---|
+| `paper/` | Whitepaper PDF, DOCX, and Markdown source |
+| `data/` | SP-SEC-50 evidence corpus, workbook, grouped synthesis, data dictionary, and query log |
+| `code/` | Literature collection and reproducibility scripts |
+| `figures/` | Figures used in the report and release materials |
+| `references/` | BibTeX references |
+| `docs/` | GitHub Pages landing page |
+| `qa/` | Proofing and quality-control notes |
 
-## Method warning
+## Project landing page
 
-The corpus supports structured quantitative synthesis. It is not a universal meta-analysis. Do not combine FTC, IC3, FinCEN, vendor telemetry, and charge-off estimates into one grand total.
+GitHub Pages landing page:
+
+https://patildineshgowd.github.io/synthetic-panopticon/
+
+## License
+
+See the repository license information and the Zenodo records for license metadata.

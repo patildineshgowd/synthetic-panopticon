@@ -1,27 +1,12 @@
 cff-version: 1.2.0
-message: "Preferred report citation: Dinesh Gowd Patil (2026). The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense. Version 1.0, June 2026. DOI: 10.5281/zenodo.20835606. Dataset citation: Dinesh Gowd Patil (2026). SP-SEC-50 Evidence Corpus v1.0: Structured Evidence on AI-Enabled Identity Fraud and PII Degradation. Version 1.0, June 2026. DOI: 10.5281/zenodo.20838054."
-title: "The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense"
-version: "1.0"
-date-released: "2026-06-06"
-doi: 10.5281/zenodo.20835606
-url: "https://doi.org/10.5281/zenodo.20835606"
+message: "If you use this repository, please cite the report DOI. If you use the SP-SEC-50 evidence corpus, please cite the dataset DOI."
+title: "The Synthetic Panopticon"
+version: "v1"
+date-released: "2026-06-24"
+url: "https://github.com/patildineshgowd/synthetic-panopticon"
 authors:
   - family-names: "Patil"
     given-names: "Dinesh Gowd"
-type: report
-abstract: "A systematic evidence review and structured quantitative synthesis of AI-enabled identity fraud, PII degradation, synthetic identity risk, and layered identity assurance."
-notes: "Accompanying dataset: Dinesh Gowd Patil (2026). SP-SEC-50 Evidence Corpus v1.0: Structured Evidence on AI-Enabled Identity Fraud and PII Degradation. Version 1.0, June 2026. DOI: 10.5281/zenodo.20838054. URL: https://doi.org/10.5281/zenodo.20838054."
-keywords:
-  - synthetic identity fraud
-  - PII degradation
-  - generative AI
-  - deepfakes
-  - identity proofing
-  - passkeys
-  - credit bureaus
-  - fraud telemetry
-  - SP-SEC-50
-  - identity assurance
 preferred-citation:
   type: report
   title: "The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense"
@@ -29,6 +14,6 @@ preferred-citation:
     - family-names: "Patil"
       given-names: "Dinesh Gowd"
   year: 2026
-  version: "1.0"
-  doi: 10.5281/zenodo.20835606
+  doi: "10.5281/zenodo.20835606"
   url: "https://doi.org/10.5281/zenodo.20835606"
+  notes: "Dataset DOI: https://doi.org/10.5281/zenodo.20838054"
