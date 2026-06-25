@@ -4,21 +4,24 @@ Author: Dinesh Gowd Patil
 Release date: June 2026  
 Evidence snapshot: June 6, 2026
 
+[![Report DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20835606.svg)](https://doi.org/10.5281/zenodo.20835606)
+[![Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20838054.svg)](https://doi.org/10.5281/zenodo.20838054)
+
 This package contains the proofread Version 1.0 release of **The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense** and the accompanying **SP-SEC-50 Evidence Corpus v1.0**.
 
 ## Release status
 
 Version 1.0 is the canonical public release for citation. Earlier working drafts are superseded. Minor corrections should be tracked through `ERRATA.md`; substantive updates should be issued as separately versioned releases.
 
-## Recommended citation
+## How to cite
 
-For the framework and whitepaper:
+For the report:
 
-Dinesh Gowd Patil (2026). *The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense*. Version 1.0, June 2026.
+Dinesh Gowd Patil (2026). *The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense*. Version 1.0, June 2026. DOI: [10.5281/zenodo.20835606](https://doi.org/10.5281/zenodo.20835606).
 
 For the dataset:
 
-Dinesh Gowd Patil (2026). *SP-SEC-50 Evidence Corpus v1.0: Structured Evidence on AI-Enabled Identity Fraud and PII Degradation*. Version 1.0, June 2026.
+Dinesh Gowd Patil (2026). *SP-SEC-50 Evidence Corpus v1.0: Structured Evidence on AI-Enabled Identity Fraud and PII Degradation*. Version 1.0, June 2026. DOI: [10.5281/zenodo.20838054](https://doi.org/10.5281/zenodo.20838054).
 
 ## Proofing changes in this build
 

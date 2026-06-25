@@ -14,4 +14,7 @@ This site hosts the landing page for *The Synthetic Panopticon: AI-Enabled Ident
 
 ## Citation
 
+- Report DOI: [10.5281/zenodo.20835606](https://doi.org/10.5281/zenodo.20835606)
+- Dataset DOI: [10.5281/zenodo.20838054](https://doi.org/10.5281/zenodo.20838054)
+
 See [`CITATION.cff`](../CITATION.cff) and the recommended citation block in the whitepaper.
