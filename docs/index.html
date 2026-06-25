@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>The Synthetic Panopticon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AI-enabled identity fraud, PII degradation, synthetic identity risk, and layered identity assurance.">
+  <title>The Synthetic Panopticon</title>
+  <meta name="description" content="The Synthetic Panopticon report and SP-SEC-50 Evidence Corpus on AI-enabled identity fraud, PII degradation, synthetic identity risk, and layered identity assurance.">
 
   <meta name="citation_title" content="The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense">
   <meta name="citation_author" content="Dinesh Gowd Patil">
@@ -13,104 +13,145 @@
   <meta name="citation_pdf_url" content="https://zenodo.org/records/20835606/files/synthetic_panopticon_v1_0_whitepaper.pdf">
 
   <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #526071;
+      --line: #d8dee8;
+      --soft: #f5f7fa;
+      --accent: #0f5b8f;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       line-height: 1.6;
-      max-width: 980px;
+      color: var(--ink);
+      background: #ffffff;
+    }
+
+    main {
+      width: min(980px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 2rem;
-      color: #1f2937;
+      padding: 48px 0 64px;
     }
-    h1, h2, h3 { color: #111827; }
-    .subtitle { font-size: 1.25rem; color: #374151; }
-    .card {
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 1rem 1.25rem;
-      margin: 1rem 0;
-      background: #f9fafb;
+
+    h1, h2, h3 { line-height: 1.2; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 4vw, 3rem); }
+    h2 { margin-top: 36px; font-size: 1.45rem; }
+    h3 { margin-bottom: 8px; font-size: 1rem; }
+
+    .subtitle {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 1.15rem;
     }
+
+    .meta p { margin: 4px 0; }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 24px 0;
+      align-items: center;
+    }
+
+    .summary {
+      border-left: 4px solid var(--accent);
+      background: var(--soft);
+      padding: 16px 18px;
+      margin: 24px 0;
+    }
+
     table {
-      border-collapse: collapse;
       width: 100%;
-      margin: 1rem 0;
+      border-collapse: collapse;
+      margin-top: 12px;
     }
+
     th, td {
-      border: 1px solid #e5e7eb;
-      padding: 0.65rem;
+      border: 1px solid var(--line);
+      padding: 10px 12px;
       text-align: left;
       vertical-align: top;
     }
-    th { background: #f3f4f6; }
+
+    th { background: var(--soft); }
+    code { font-family: "SFMono-Regular", Consolas, monospace; }
+
     pre {
-      background: #f3f4f6;
-      border-radius: 6px;
-      padding: 1rem;
+      margin: 8px 0 20px;
+      padding: 14px;
       overflow-x: auto;
       white-space: pre-wrap;
+      border: 1px solid var(--line);
+      background: var(--soft);
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 0.94rem;
     }
-    a { color: #1d4ed8; }
+
+    a { color: var(--accent); }
   </style>
 </head>
 <body>
-  <h1>The Synthetic Panopticon</h1>
-  <p class="subtitle">AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense</p>
+  <main>
+    <h1>The Synthetic Panopticon</h1>
+    <p class="subtitle">AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense</p>
 
-  <p><strong>Author:</strong> Dinesh Gowd Patil</p>
-  <p><strong>Version:</strong> v1</p>
-  <p><strong>Published:</strong> June 2026</p>
+    <div class="meta">
+      <p><strong>Author:</strong> Dinesh Gowd Patil</p>
+      <p><strong>Version:</strong> v1</p>
+      <p><strong>Published:</strong> June 2026</p>
+    </div>
 
-  <p>
-    <a href="https://doi.org/10.5281/zenodo.20835606">
-      <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20835606.svg" alt="Report DOI">
-    </a>
-    <br>
-    <a href="https://doi.org/10.5281/zenodo.20838054">
-      <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20838054.svg" alt="Dataset DOI">
-    </a>
-  </p>
+    <div class="badges" aria-label="DOI badges">
+      <a href="https://doi.org/10.5281/zenodo.20835606"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20835606.svg" alt="Report DOI: 10.5281/zenodo.20835606"></a>
+      <a href="https://doi.org/10.5281/zenodo.20838054"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.20838054.svg" alt="Dataset DOI: 10.5281/zenodo.20838054"></a>
+    </div>
 
-  <div class="card">
-    <h2>Overview</h2>
-    <p>
-      <em>The Synthetic Panopticon</em> is a technical report and evidence package on AI-enabled identity fraud,
-      PII degradation, synthetic identity risk, deepfake-enabled impersonation, and layered identity assurance.
-      The companion SP-SEC-50 Evidence Corpus provides structured source and metric data for review, reuse, and extension.
-    </p>
-  </div>
+    <section class="summary">
+      <p><em>The Synthetic Panopticon</em> is a report and reproducibility package on AI-enabled identity fraud, PII degradation, synthetic identity risk, deepfake-enabled impersonation, and layered identity assurance. The companion SP-SEC-50 Evidence Corpus provides structured source and metric data for review, reuse, and extension.</p>
+    </section>
 
-  <h2>Canonical research outputs</h2>
-  <table>
-    <tr>
-      <th>Artifact</th>
-      <th>DOI</th>
-      <th>Link</th>
-    </tr>
-    <tr>
-      <td>Report</td>
-      <td><code>10.5281/zenodo.20835606</code></td>
-      <td><a href="https://doi.org/10.5281/zenodo.20835606">https://doi.org/10.5281/zenodo.20835606</a></td>
-    </tr>
-    <tr>
-      <td>Dataset</td>
-      <td><code>10.5281/zenodo.20838054</code></td>
-      <td><a href="https://doi.org/10.5281/zenodo.20838054">https://doi.org/10.5281/zenodo.20838054</a></td>
-    </tr>
-  </table>
+    <h2>Canonical Research Outputs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Artifact</th>
+          <th>DOI</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Report</td>
+          <td><code>10.5281/zenodo.20835606</code></td>
+          <td><a href="https://doi.org/10.5281/zenodo.20835606">https://doi.org/10.5281/zenodo.20835606</a></td>
+        </tr>
+        <tr>
+          <td>Dataset</td>
+          <td><code>10.5281/zenodo.20838054</code></td>
+          <td><a href="https://doi.org/10.5281/zenodo.20838054">https://doi.org/10.5281/zenodo.20838054</a></td>
+        </tr>
+      </tbody>
+    </table>
 
-  <h2>How to cite</h2>
+    <h2>How to Cite</h2>
+    <h3>Report</h3>
+    <pre>Dinesh Gowd Patil. (2026). The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense (Version v1) [Report]. Zenodo. https://doi.org/10.5281/zenodo.20835606</pre>
 
-  <h3>Report</h3>
-  <pre>Dinesh Gowd Patil. (2026). The Synthetic Panopticon: AI-Enabled Identity Fraud, PII Degradation, and Multi-Layered Identity Defense (Version v1) [Report]. Zenodo. https://doi.org/10.5281/zenodo.20835606</pre>
+    <h3>Dataset</h3>
+    <pre>Dinesh Gowd Patil. (2026). SP-SEC-50 Evidence Corpus: Structured Evidence on AI-Enabled Identity Fraud and PII Degradation (Version v1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20838054</pre>
 
-  <h3>Dataset</h3>
-  <pre>Dinesh Gowd Patil. (2026). SP-SEC-50 Evidence Corpus: Structured Evidence on AI-Enabled Identity Fraud and PII Degradation (Version v1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20838054</pre>
-
-  <h2>Downloads and repository</h2>
-  <ul>
-    <li><a href="https://doi.org/10.5281/zenodo.20835606">Report DOI landing page</a></li>
-    <li><a href="https://doi.org/10.5281/zenodo.20838054">Dataset DOI landing page</a></li>
-    <li><a href="https://github.com/patildineshgowd/synthetic-panopticon">GitHub repository</a></li>
-  </ul>
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://doi.org/10.5281/zenodo.20835606">Report DOI landing page</a></li>
+      <li><a href="https://doi.org/10.5281/zenodo.20838054">Dataset DOI landing page</a></li>
+      <li><a href="https://github.com/patildineshgowd/synthetic-panopticon">GitHub repository</a></li>
+    </ul>
+  </main>
 </body>
 </html>
